@@ -18,9 +18,7 @@ namespace Penguin.Configuration.Extensions
         /// <returns>The value (or null) of the key</returns>
         public static string Get(this IConfigurationProvider provider, string key)
         {
-            string value = null;
-
-            if (provider.TryGet(key, out value))
+            if (provider.TryGet(key, out string value))
             {
                 return value;
             }
