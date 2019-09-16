@@ -1,15 +1,16 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Penguin.Configuration.Abstractions;
-using Penguin.Extensions.String;
+using Penguin.Extensions.Strings;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 
 namespace Penguin.Configuration.Extensions
 {
+
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public static class IConfigurationProviderExtensions
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
-        #region Methods
         /// <summary>
         /// Calls TryGet on an IConfiguration provider
         /// </summary>
@@ -18,6 +19,8 @@ namespace Penguin.Configuration.Extensions
         /// <returns>The value (or null) of the key</returns>
         public static string Get(this IConfigurationProvider provider, string key)
         {
+            Contract.Requires(provider != null);
+
             if (provider.TryGet(key, out string value))
             {
                 return value;
@@ -56,6 +59,8 @@ namespace Penguin.Configuration.Extensions
         /// <returns>A dictionary representing the key value pairs found in the configuration value</returns>
         public static Dictionary<string, string> GetDictionary(this IProvideConfigurations provider, string key)
         {
+            Contract.Requires(provider != null);
+
             string v = provider.GetConfiguration(key);
 
             if (v is null)
@@ -67,7 +72,5 @@ namespace Penguin.Configuration.Extensions
                 return v.ToDictionary();
             }
         }
-
-        #endregion Methods
     }
 }
