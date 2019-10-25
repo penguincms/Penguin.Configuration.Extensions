@@ -1,13 +1,14 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Penguin.Configuration.Abstractions;
+using Penguin.Configuration.Abstractions.Interfaces;
 using Penguin.Extensions.Strings;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 
 namespace Penguin.Configuration.Extensions
 {
-
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
     public static class IConfigurationProviderExtensions
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     {
