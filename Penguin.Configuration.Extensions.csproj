@@ -14,7 +14,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Penguin.Configuration.Abstractions" Version="3.0.2-T9XWH6X" />
+    <PackageReference Include="Penguin.Configuration.Abstractions" Version="3.0.2-T9XYC7H" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
