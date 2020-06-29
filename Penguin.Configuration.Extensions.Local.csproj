@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Configuration.Extensions</PackageProjectUrl>
     <Description>Provides extensions for Penguin configuration types to simplify data access</Description>
-    <Version>2.0.0</Version>
+    <Version>5.0.0</Version>
     <AssemblyName>Penguin.Configuration.Extensions</AssemblyName>
     <RootNamespace>Penguin.Configuration.Extensions</RootNamespace>
     <DocumentationFile>Penguin.Configuration.Extensions.xml</DocumentationFile>
