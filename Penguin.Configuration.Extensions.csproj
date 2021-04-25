@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Configuration.Extensions</PackageProjectUrl>
     <Description>Provides extensions for Penguin configuration types to simplify data access</Description>
-    <Version>5.0.1</Version>
+    <Version>5.0.5</Version>
     <AssemblyName>Penguin.Configuration.Extensions</AssemblyName>
     <RootNamespace>Penguin.Configuration.Extensions</RootNamespace>
     <DocumentationFile>Penguin.Configuration.Extensions.xml</DocumentationFile>
@@ -14,7 +14,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Penguin.Configuration.Abstractions" Version="5.0.2-TADRIFB" />
+    <PackageReference Include="Penguin.Configuration.Abstractions" Version="5.0.4" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
