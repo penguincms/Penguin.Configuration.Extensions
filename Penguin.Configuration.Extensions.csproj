@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageProjectUrl>https://github.com/penguincms/Penguin.Configuration.Extensions</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/PenguinCMS/Penguin.Configuration.Extensions</PackageProjectUrl>
     <Description>Provides extensions for Penguin configuration types to simplify data access</Description>
     <Version>5.0.5</Version>
     <AssemblyName>Penguin.Configuration.Extensions</AssemblyName>
@@ -14,7 +14,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-    <PackageReference Include="Penguin.Configuration.Abstractions" Version="5.0.6-TAEO1KM" />
+    <PackageReference Include="Penguin.Configuration.Abstractions" Version="5.0.6-TAHULSY" />
   </ItemGroup>
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
 </Project>
